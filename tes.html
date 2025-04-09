@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fikri Umar Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #003049;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #003049;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid white;
+    }
+    nav a {
+      margin-left: 3rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      flex-grow: 1;
+    }
+    section {
+      padding: 2rem;
+    }
+    .work-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5rem;
+    }
+    .work-gallery img {
+      width: 20rem;
+      height: 25rem;
+      object-fit: cover;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+     .about-container {
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+      align-items: flex-start;
+    }
+    .profile-photo {
+      width: 14rem;
+      height: 18rem;
+      background-color: #facc15;
+      border-radius: 0.5rem;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #031c29;
+      color: white;
+      padding: 0,8rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="text-xl font-bold">FIK</h1>
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#work">PORTOFOLIO</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2 class="text-xl font-bold mb-4">About me</h2>
+      <div class="about-container">
+        <!-- Foto -->
+        <div class="profile-photo">
+          <img src="https://imgur.com/8TMk8RE.jpeg" alt="Foto Profil">
+        </div>
+        <!-- Teks -->
+        <div class="bio-text">
+          <h1 style="font-size: 3rem; font-weight: 800; color: #facc15; line-height: 1.2;">FIKRI UMAR<br>ASY-SYAMIL</h1>
+          <p><em>Graphic Designer & Photographer</em></p>
+          <p>Saya seorang mahasiswa yang menyukai <em>Photography</em> dan <em>Infographic</em>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portofolio -->
+    <section id="work">
+      <h2 style="font-size: 3rem; font-weight: bold; color: #facc15; text-align: center; margin-bottom: 1.5rem;">PORTOFOLIO</h2>
+      <div class="work-gallery">
+      	<img src="https://i.imgur.com/pCtVFvF.jpeg">
+        <img src="https://i.imgur.com/jdoUcSE.jpeg">
+        <img src="https://imgur.com/4iiNFwV.jpeg">
+        <img src="https://imgur.com/YAGzSAs.jpeg">
+        <img src="https://imgur.com/ub35IQ9.jpeg">
+		<img src="https://imgur.com/TR4NCqf.jpeg">
+		<img src="https://imgur.com/K1pYP5i.jpeg">
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 0.5rem;">CONTACT</h2>
+    <p style="font-size: 1rem;">+62 85172347285</p>
+    <p style="font-size: 1rem;">fikriumarasy@upi.edu</p>
+  </footer>
+</body>
+</html>
